@@ -1,0 +1,456 @@
+@import "_btn";
+
+*{
+    background-color: rgb(48, 19, 19);
+    
+  }
+
+.titulo {
+    color: rgb(227, 228, 229);
+    border: 2px solid rgb(128, 128, 128);
+    text-align: center;
+    
+}
+.titulo:hover {
+    color: black;
+    transform:scalex(2);
+    transition: 1s;
+} 
+
+.uno {
+    color: rgb(253, 253, 253);
+    font-size: 30px;
+    }
+
+.galeria {
+    border: 4px black solid;
+       width: 320px; 
+       height: 200px;
+       position: relative;
+    
+}
+
+.integrantes, .resena, .discografia, .oficial, .cancion {
+    color: rgb(230, 245, 96);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+   width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.item {
+    margin-bottom: 10px;
+    float: left;
+}
+
+.lista, p, ol, .lis  {
+    color: white;
+    font-family: monospace;
+    margin: auto;
+}
+
+.cara {
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 150px;
+}
+
+.btn {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: 'Herzeleid';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btn::after{
+    content: ' 25 de septiembre de 1995 ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.8rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btn:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btndos {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btndos::before{
+    content: 'Sehnsucht';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btndos::after{
+    content: '25 de agosto de 1997';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.8rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btndos:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btndos:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btntres {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btntres::before{
+    content: 'Live Aus Berlin';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btntres::after{
+    content: ' 23 de agosto de 1998 ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.9rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btntres:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btntres:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btncuatro {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btncuatro::before{
+    content: 'Mutter';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btncuatro::after{
+    content: '2 de abril de 2001';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.9rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btncuatro:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btncuatro:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btncinco {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btncinco::before{
+    content: 'Reise, Reise';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btncinco::after{
+    content: '27 de septiembre de 2004';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.8rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btncinco:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btncinco:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btnseis {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btnseis::before{
+    content: 'Rosenrot';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btnseis::after{
+    content: '16 de diciembre de 2005';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.9rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btnseis:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btnseis:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btnsiete {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btnsiete::before{
+    content: 'Völkerball';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btnsiete::after{
+    content: '17 de noviembre de 2006';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.9rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btnsiete:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btnsiete:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btnocho {
+    padding: 2.5rem 4rem;
+    background: #333;
+    border: 0.1rem solid #2f0404;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.btnocho::before{
+    content: 'Liebe Ist Für Alle Da';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+     color: rgb(109, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+}
+
+.btnocho::after{
+    content: '16 de octubre de 2009';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 0.9rem;
+    color: rgb(14, 5, 5);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem rgb(218, 169, 169);
+    transition: .2s ease;
+    opacity: 0;
+}
+.btnocho:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+.btnocho:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
